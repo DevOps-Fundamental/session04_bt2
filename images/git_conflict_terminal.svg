@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 600" width="100%" height="100%">
+  <rect width="940" height="600" fill="rgb(15, 23, 42)" rx="8"/>
+  <rect width="940" height="38" fill="rgb(30, 41, 59)" rx="8"/>
+  <circle cx="20" cy="19" r="6" fill="rgb(239, 68, 68)"/>
+  <circle cx="38" cy="19" r="6" fill="rgb(245, 158, 11)"/>
+  <circle cx="56" cy="19" r="6" fill="rgb(34, 197, 94)"/>
+  <text x="310" y="24" fill="rgb(148, 163, 184)" font-family="Segoe UI, -apple-system, sans-serif" font-size="12">Terminal: Git Branching &amp; Merge Conflict Resolution</text>
+
+  <g font-family="Courier New, Consolas, monospace" font-size="13">
+    <!-- Command 1: Merge attempt -->
+    <text x="24" y="66" fill="rgb(34, 197, 94)">devops@workstation</text>
+    <text x="180" y="66" fill="rgb(248, 250, 252)">:~/project$ </text>
+    <text x="275" y="66" fill="rgb(56, 189, 248)">git merge feature-update</text>
+    <text x="24" y="88" fill="rgb(203, 213, 225)">Auto-merging README.md</text>
+    <text x="24" y="108" fill="rgb(239, 68, 68)" font-weight="bold">CONFLICT (content): Merge conflict in README.md</text>
+    <text x="24" y="128" fill="rgb(239, 68, 68)">Automatic merge failed; fix conflicts and then commit the result.</text>
+
+    <!-- Command 2: Git status -->
+    <text x="24" y="162" fill="rgb(34, 197, 94)">devops@workstation</text>
+    <text x="180" y="162" fill="rgb(248, 250, 252)">:~/project$ </text>
+    <text x="275" y="162" fill="rgb(56, 189, 248)">git status</text>
+    <text x="24" y="186" fill="rgb(203, 213, 225)">On branch main</text>
+    <text x="24" y="206" fill="rgb(245, 158, 11)">You have unmerged paths. (fix conflicts and run "git commit")</text>
+    <text x="24" y="226" fill="rgb(239, 68, 68)">	both modified:   README.md</text>
+
+    <!-- Command 3: Resolve and commit -->
+    <text x="24" y="262" fill="rgb(34, 197, 94)">devops@workstation</text>
+    <text x="180" y="262" fill="rgb(248, 250, 252)">:~/project$ </text>
+    <text x="275" y="262" fill="rgb(56, 189, 248)">git add README.md</text>
+    <text x="24" y="294" fill="rgb(34, 197, 94)">devops@workstation</text>
+    <text x="180" y="294" fill="rgb(248, 250, 252)">:~/project$ </text>
+    <text x="275" y="294" fill="rgb(56, 189, 248)">git commit -m "merge: giai quyet xung dot giua main va feature-update"</text>
+    <text x="24" y="318" fill="rgb(34, 197, 94)">[main 9c4d21e] merge: giai quyet xung dot giua main va feature-update</text>
+
+    <!-- Command 4: git log --graph --oneline -->
+    <text x="24" y="358" fill="rgb(34, 197, 94)">devops@workstation</text>
+    <text x="180" y="358" fill="rgb(248, 250, 252)">:~/project$ </text>
+    <text x="275" y="358" fill="rgb(56, 189, 248)">git log --graph --oneline</text>
+
+    <!-- Graph rendering in terminal -->
+    <text x="24" y="388" fill="#ef4444" font-weight="bold">*   </text>
+    <text x="60" y="388" fill="#f59e0b" font-weight="bold">9c4d21e</text>
+    <text x="125" y="388" fill="#38bdf8"> (HEAD -&gt; main) </text>
+    <text x="250" y="388" fill="#f8fafc">merge: giai quyet xung dot giua main va feature-update</text>
+
+    <text x="24" y="412" fill="#ef4444">|\  </text>
+
+    <text x="24" y="436" fill="#ef4444">| </text>
+    <text x="40" y="436" fill="#22c55e" font-weight="bold">* </text>
+    <text x="60" y="436" fill="#f59e0b">7b1a03f</text>
+    <text x="125" y="436" fill="#34d399"> (feature-update) </text>
+    <text x="265" y="436" fill="#f8fafc">feat: cap nhat noi dung tu nhanh feature-update</text>
+
+    <text x="24" y="460" fill="#ef4444" font-weight="bold">* </text>
+    <text x="40" y="460" fill="#22c55e">| </text>
+    <text x="60" y="460" fill="#f59e0b">3e8c91a</text>
+    <text x="125" y="460" fill="#f8fafc">docs: cap nhat noi dung truc tiep tren nhanh main</text>
+
+    <text x="24" y="484" fill="#ef4444">|/  </text>
+
+    <text x="24" y="508" fill="#ef4444" font-weight="bold">*   </text>
+    <text x="60" y="508" fill="#f59e0b">1f5b42a</text>
+    <text x="125" y="508" fill="#f8fafc">feat: commit goc khoi tao du an ban dau</text>
+
+    <text x="24" y="550" fill="rgb(34, 197, 94)">devops@workstation</text>
+    <text x="180" y="550" fill="rgb(248, 250, 252)">:~/project$ </text>
+  </g>
+</svg>
